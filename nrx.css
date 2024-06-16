@@ -1,0 +1,158 @@
+@font-face {
+    font-family:'font' ;
+    src: url('fonts/font.ttf');
+}
+body{
+    background-color: rgb(242, 232, 232);
+    direction: rtl;
+    font-family: font;
+}
+.button-28 a{
+    text-decoration: none;
+   color: black;
+}
+.button-28 a:hover{
+    color: #fff;
+}
+.head img{
+    width: 40%;
+    height: 50%;
+}
+.head {
+    text-align: center;
+}
+.container{   
+    position: relative;  
+    display: inline-block;
+    margin-right: 6%;
+    
+   }  
+   .container .card{  
+    position: relative;  
+    width: 300px;  
+    height: 450px;  
+    background: #232323;  
+    border-radius: 20px;  
+    overflow: hidden;  
+    cursor: pointer;
+   }  
+   .container .card:before{  
+    content: '';  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100%;  
+    background: #3737e4;  
+    clip-path: circle(150px at 80% 20%);  
+    transition: 0.5s ease-in-out;  
+   }  
+   .container .card:hover:before{  
+    clip-path: circle(300px at 80% -20%);  
+   }  
+  
+   .container .card .imgBx{  
+    position: absolute;  
+    top: 50%;  
+    transform: translateY(-50%);  
+    z-index: 10000;  
+    width: 100%;  
+    height: 220px;  
+    transition: 0.5s;  
+   }  
+   .container .card:hover .imgBx{  
+    top: 0%;  
+    transform: translateY(0%);  
+   }  
+   .container .card .imgBx img{  
+    position: absolute;  
+    top: 50%;  
+    left: 50%;  
+    transform: translate(-50%, -50%) rotate(-25deg);  
+    width: 270px;  
+   }  
+   .container .card .contentBx{  
+    position: absolute;  
+    bottom: 0;  
+    width: 100%;  
+    height: 100px;  
+    text-align: center;  
+    transition: 1s;  
+    z-index: 10;  
+   }  
+   .container .card:hover .contentBx{  
+    height: 210px;  
+   }  
+   .container .card .contentBx h2{  
+    position: relative;  
+    font-weight: 600;  
+    letter-spacing: 1px;  
+    color: #fff;  
+    margin: 0;  
+   }  
+   .container .card .contentBx a{  
+    display: inline-block;  
+    padding: 10px 20px;  
+    background: #fff;  
+    border-radius: 4px;  
+    margin-top: 10px;  
+    text-decoration: none;  
+    font-weight: 600;  
+    color: #111;  
+    opacity: 0;  
+    transform: translateY(50px);  
+    transition: 0.4s;  
+    margin-top: 0;  
+   }  
+   .container .card:hover .contentBx a{  
+    opacity: 1;  
+    transform: translateY(0px);  
+    transition-delay: 0.75s;  
+   }  
+   .container h3{
+       color: #fff;
+   }
+   /* CSS */
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: font;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20%;
+    will-change: transform;
+  }
+  
+  .button-28:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
